@@ -7,7 +7,7 @@
 -->
 <template>
   <div>
-    {{`fjalfsdf${num}-${msg}`}}
+    {{ `fjalfsdf${num}-${msg}` }}
   </div>
 </template>
 
@@ -26,19 +26,17 @@ export default {
   },
   components: {},
   data() {
-    return {
-
-    };
+    return {};
   },
   mounted() {},
   methods: {
     aaa() {
-      return () => { 132; };
+      return () => {
+        132;
+      };
     }
   }
 };
 </script>
 
-<style lang='scss' scoped>
-
-</style>
+<style lang="scss" scoped></style>

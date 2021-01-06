@@ -54,7 +54,7 @@ module.exports = {
       'SwitchCase': 1
     }],
     'jsx-quotes': [2, 'prefer-single'], // 强制在JSX文件中一致使用单引号
-    'quotes': [2, 'double', {
+    'quotes': [1, 'double', {
       'avoidEscape': true,
       'allowTemplateLiterals': true
     }],
