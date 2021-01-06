@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import { Test } from '../lib/index';
+import { Test } from "../lib/index";
 export default {
   props: {
     list: Array,
@@ -22,16 +22,11 @@ export default {
   name: "App",
   methods: {
     aaa() {
-
-
-      
-      let a = 3;
+      let a = "3";
       let b = 5;
 
-
-
       if (a === b) {
-        console.log(b);
+        console.log(123);
       }
       console.log(a, b, 123);
     }

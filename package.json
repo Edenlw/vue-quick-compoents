@@ -5,18 +5,21 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --ext .tsx,.ts,.js,.vue --fix ./examples",
+    "fix": "prettier --write  ./examples",
     "build:npm": "vue-cli-service build --target lib --dest dist-npm lib/index.js",
     "release": "npm publish"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "npm run lint"
+    "examples/**/*.{js,vue}": [
+      "npm run lint",
+      "npm run fix",
+      "git add"
     ]
   },
   "dependencies": {
