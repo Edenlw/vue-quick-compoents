@@ -23,7 +23,8 @@ export default {
   methods: {
     aaa() {
       let a = "3";
-      let b = 5;
+
+      let b = "5";
 
       if (a === b) {
         console.log(123);

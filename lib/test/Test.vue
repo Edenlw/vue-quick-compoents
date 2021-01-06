@@ -21,7 +21,7 @@ export default {
     },
     msg: {
       type: String,
-      default: 'test'
+      default: "test"
     }
   },
   components: {},
@@ -33,9 +33,6 @@ export default {
   mounted() {},
   methods: {
     aaa() {
-
-
-      
       return () => { 132; };
     }
   }
