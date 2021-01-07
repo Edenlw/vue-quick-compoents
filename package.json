@@ -1,11 +1,22 @@
 {
   "name": "vue-quick-components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vue-quick-components.umd.min.js",
+  "author": "edenlw",
+  "license": "MIT",
+  "keyword": [
+    "quick",
+    "edenlw"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Edenlw/vue-quick-compoents"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "eslint --ext .tsx,.ts,.js,.vue --fix ./examples",
+    "lint": "eslint --ext .tsx,.ts,.js,.vue --fix ./lib",
     "fix": "prettier --write  ./examples",
     "build:npm": "vue-cli-service build --target lib --dest dist-npm lib/index.js",
     "release": "npm publish"
@@ -16,8 +27,7 @@
     }
   },
   "lint-staged": {
-    "examples/**/*.{js,vue}": [],
-    "lib/**/*.{js,vue}": [
+    "lib/**/*.{js,vue,css,scss}": [
       "npm run lint",
       "npm run fix",
       "git add"

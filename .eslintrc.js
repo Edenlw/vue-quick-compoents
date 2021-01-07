@@ -17,13 +17,12 @@ module.exports = {
     // /// vue.规范 /////
     // /////////////////
     'vue/max-attributes-per-line': [1, { // 多个特性的元素应该分多行撰写，每个特性一行
-      'singleline': 10,
-      'multiline': {
-        'max': 1,
-        'allowFirstLine': false
+      "singleline": 3,
+      "multiline": {
+        "max": 1,
+        "allowFirstLine": true
       }
     }],
-    'vue/singleline-html-element-content-newline': 2, // 在单行元素的内容前后需要换行符
     'vue/multiline-html-element-content-newline': 2, // 在多行元素的内容之前和之后需要换行符
     'vue/name-property-casing': [2, 'PascalCase'], // JS/JSX中的组件名应该始终是帕斯卡命名法
     'vue/prop-name-casing': [2, 'camelCase'], // 在声明prop的时候，其命名应该始终使用驼峰命名
