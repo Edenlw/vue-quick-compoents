@@ -15,9 +15,12 @@
 <script>
 import { Test } from "../lib/index";
 export default {
-  props: {
-    list: Array,
-    default: () => {}
+  data() {
+    return {
+      list: [
+        {name: 123, id: 1}
+      ]
+    };
   },
   name: "App",
   methods: {
