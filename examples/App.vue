@@ -14,12 +14,26 @@
 </template>
 <script>
 import { Test } from "../lib/index";
+import axios from "axios";
 export default {
   props: {
     list: Array,
     default: () => {}
   },
   name: "App",
+  mounted() {
+    axios.get("/mock/news").then(res => { // url即在mock.js中定义的
+      console.log(res.data); // 打印一下响应数据
+    });
+    axios.post("/test/cityInfo", {
+      name: name
+    }).then(res => {
+      console.log(88, res);
+      if (res.data) {
+        this.img = res.data.img;
+      }
+    });
+  },
   methods: {
     aaa() {
       let a = "3";

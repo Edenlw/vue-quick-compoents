@@ -17,7 +17,6 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "eslint --ext .tsx,.ts,.js,.vue --fix ./lib",
-    "fix": "prettier --write  ./examples",
     "build:npm": "vue-cli-service build --target lib --dest dist-npm lib/index.js",
     "release": "npm publish"
   },
@@ -29,11 +28,11 @@
   "lint-staged": {
     "lib/**/*.{js,vue,css,scss}": [
       "npm run lint",
-      "npm run fix",
       "git add"
     ]
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -48,6 +47,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
+    "mockjs": "^1.1.0",
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
   }

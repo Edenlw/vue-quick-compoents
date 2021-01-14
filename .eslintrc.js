@@ -107,5 +107,6 @@ module.exports = {
     'padded-blocks': [2, 'never'], // 在块内要求或禁止填充
     'semi': [2, 'always'], // 强制语句分号结尾
     'space-before-blocks': [2, 'always'], // 不要存在多余的块空间
+    "object-curly-spacing": [2, "always"], //对象左右留有空格
   }
 };
